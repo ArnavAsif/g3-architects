@@ -83,6 +83,7 @@
   }
   .banner-img{
     width: 100%;
+    margin-bottom: 50px;
   }
 
   @media screen and (max-width: 576px) {
@@ -94,3 +95,39 @@
     }
   }
 
+  /* feature style */
+  .features {
+    max-width: 1318px;
+    margin: 0 auto;
+    margin-top: 85px;
+    align-items: center;
+  }
+  .feature-img{
+    max-width: 708px;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 20px;
+  }
+  .feature-img img{
+    width: 100%;
+  }
+  .feature-description {
+    max-width: 537px;
+    margin-left: 73px;
+  }
+  .feature-head{
+    font-size: 2.8rem;
+  }
+  .feature-para{
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+  .fhead-color{
+    color: #FF900E;
+  }
+
+  @media screen and (max-width: 576px) {
+    .features{
+      flex-direction: column;
+    }
+  }
