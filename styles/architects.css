@@ -90,6 +90,9 @@
     .navbar, .banner {
         padding: 0;
       }
+      .nav-list {
+        margin-bottom: 20px;
+      }
     .navbar , .nav-links {
         flex-direction: column;
     }
