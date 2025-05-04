@@ -27,6 +27,10 @@
     font-size: 1.25rem;
     font-weight: 600;
 }
+.btn-primary a{
+  text-decoration: none;
+  color: #ffffff;
+}
   /* display flex */
   .display-flex {
     display: flex;
