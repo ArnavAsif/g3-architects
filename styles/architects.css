@@ -102,10 +102,17 @@
     }
     .nav-links{
       margin-right: 270px;
-    
      
     }
   }
+  @media screen and (min-width: 576px) and (max-width: 972px) {
+    .navbar {
+      justify-content: space-around;
+    }
+    .navbar , .banner{
+      padding: 50px;
+    }
+}
   /* main styles */
   main{
     max-width: 1440px;
@@ -148,6 +155,12 @@
       text-align: center;
     }
   }
+  @media screen and (min-width: 577px) and (max-width:976px) {
+    .team-skills {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
 
   /* container styles */
   
@@ -155,7 +168,7 @@
   .container-description{
     margin-top: 169px;
     max-width: 586px;
-    width: 100%;
+    /* width: 100%; */
     margin-right: 56px;
   }
   .container-head {
@@ -186,21 +199,13 @@
     color: #727272;
   }
 
-  .container-img{
-    margin-top: 130px;
-    position: relative;
-  }
-  .container-img img {
-    padding-left: 92px;
-    padding-right: 70px;
-    width: 100%;
-  }
   .btn-secoundary{
     padding: 46px 42px 45px 42px;
     background-color: #FF900E;
     color: #ffffff;
     border-radius: 8px;
     border: none;
+    margin-top: -200px;
   }
   .btn-clr-1{
     font-size: 4.1rem;
@@ -210,12 +215,14 @@
     font-size: 1.6rem;
     font-weight: 500;
   }
-  .container-img .btn-secoundary {
-    position: absolute;
-    top: 85%;
-    right: 55%;
+  .container-img{
+    width: 800px;
   }
-
+  .container-img img {
+    width: 100%;
+    margin-top: 130px;
+    margin-left: 146px;
+  }
 
  @media screen and (max-width: 576px) {
   .container {
@@ -233,11 +240,32 @@
     font-weight: 500;
   }
   .container-img img {
-    padding: 0;
+    margin-top: 0px;
+    margin-left: 0px;
   }
-  .container-img .btn-secoundary {
-    position: absolute;
-    top: 90%;
-    right: 75%;
-  }
+  
  }
+ @media screen and (min-width: 577px) and (max-width:976px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+  .container-img img {
+    width: 80%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .btn-secoundary{
+    padding: 20px;
+    margin-top: -50px;
+  }
+  .btn-clr-1{
+    font-size: 2rem;
+  }
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
